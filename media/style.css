@@ -1,0 +1,119 @@
+#grid-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 350px;
+    
+}
+
+#grid-container > div{
+    border-radius: 4%;
+    font-size: 25px;
+   
+}
+
+.header{
+    background-color: #999999;
+    color: white;
+}
+.sidebar{
+    background-color: #4d4d4d;
+    color: white;
+}
+.content{
+    background-color: #4d4d4d;
+    color:white;
+}
+.sidebar-two{
+    background-color: #bfbfbf;
+    color:black;
+}
+.footer{
+    background-color: #999999;
+    color:white;
+}
+
+@media(min-width: 750px){
+    
+    #grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 150px);
+        
+    }
+    
+    #grid-container > div{
+        border-radius: 4%;
+        font-size: 25px;
+       
+    }
+    
+    .header{
+        background-color: #999999;
+        color: white;
+        grid-column: 1/5;
+    }
+    .sidebar{
+        background-color: #4d4d4d;
+        color: white;
+        grid-column: 1/2;
+    }
+    .content{
+        background-color: #4d4d4d;
+        color:white;
+        grid-column: 2/5;
+
+    }
+    .sidebar-two{
+        background-color: #bfbfbf;
+        color:black;
+        grid-column: 1/5;
+    }
+    .footer{
+        background-color: #999999;
+        color:white;
+        grid-column: 1/5;
+    }
+}
+
+@media(min-width: 1280px){
+    
+    #grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 150px);
+        
+    }
+    
+    #grid-container > div{
+        border-radius: 4%;
+        font-size: 25px;
+       
+    }
+    
+    .header{
+        background-color: #999999;
+        color: white;
+        grid-column: 1/5;
+    }
+    .sidebar{
+        background-color: #4d4d4d;
+        color: white;
+        grid-column: 1/2;
+    }
+    .content{
+        background-color: #4d4d4d;
+        color:white;
+        grid-column: 2/4;
+
+    }
+    .sidebar-two{
+        background-color: #bfbfbf;
+        color:black;
+        grid-column: 4/5;
+    }
+    .footer{
+        background-color: #999999;
+        color:white;
+        grid-column: 1/5;
+    }
+}
